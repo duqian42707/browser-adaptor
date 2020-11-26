@@ -42,3 +42,10 @@ npm install --save-dev ts-loader
 ```
 
 添加配置文件：`tsconfig.json`
+
+
+## 解析less样式文件
+
+```bash
+npm install --save-dev style-loader css-loader less less-loader
+```

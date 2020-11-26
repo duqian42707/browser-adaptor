@@ -1,48 +1,17 @@
-* {
+.browser-adaptor * {
     margin: 0;
     padding: 0;
-    font-family: "微软雅黑";
 }
 
-ul li {
-    list-style: none;
-}
-
-a, a:link, a:hover, a:focus, a:active {
-    text-decoration: none;
-    background: none;
-    outline: none;
-}
-
-a:hover {
-    cursor: pointer;
-}
-
-b, i {
-    font-weight: normal;
-    font-style: normal;
-}
-
-img {
-    border: none;
-    outline: none;
-}
-
-html {
-}
-
-body {
-    font-size: 16px;
-}
-
-.browser-alert {
-    width: 1200px;
-    padding: 0 50px;
+.browser-adaptor {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 0 20px;
     margin: 0 auto;
     background: #fff;
 }
 
-.title-tip {
+.browser-adaptor .title-tip {
     font-size: 16px;
     text-align: left;
     padding: 16px 24px;
@@ -54,31 +23,31 @@ body {
     margin: 56px auto 0;
 }
 
-.title-tip a {
+.browser-adaptor .title-tip a {
     font-weight: bold;
     color: #2196ff;
 }
 
-.title-tip a:hover, .title-tip a:focus, .title-tip a:active {
+.browser-adaptor .title-tip a:hover, .title-tip a:focus, .title-tip a:active {
     color: #0673d6;
 }
 
-.browser-alert-list {
+.browser-adaptor .browser-adaptor-list {
     margin: 40px auto;
 }
 
-.browser-alert-list ul {
-    overflow: hidden;
+.browser-adaptor .browser-adaptor-list ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.browser-alert-list ul li {
+.browser-adaptor .browser-adaptor-list ul li {
     list-style: none;
-    float: left;
-    width: 20%;
-    height: 82px;
+    width: 232px;
+    height: 85px;
 }
 
-.browser-alert-list ul li a {
+.browser-adaptor .browser-adaptor-list ul li a {
     display: block;
     height: 40px;
     line-height: 40px;
@@ -89,59 +58,19 @@ body {
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, .1);
 }
 
-.browser-alert-list ul li:hover a {
+.browser-adaptor .browser-adaptor-list ul li:hover a {
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, .18);
 }
 
-.browser-alert-download img.browser-logo {
+.browser-adaptor .browser-adaptor-download .browser-logo {
     width: 40px;
     height: 40px;
     float: left;
 }
 
-.browser-alert-download img.recommend {
-    width: 24px;
-    height: 24px;
-    float: left;
-}
-
-.browser-alert-list ul li span {
+.browser-adaptor .browser-adaptor-list ul li span {
     float: left;
     margin: 0 0 0 10px;
     color: #444;
     font-size: 14px;
-}
-
-.browser-alert-doc {
-    clear: both;
-}
-
-.browser-alert-doc h2 {
-    font-size: 23px;
-    margin: 0 0 16px;
-}
-
-.browser-alert-doc ul li {
-    list-style: none;
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #f4f4f4;
-}
-
-.browser-alert-doc ul li:last-child {
-    border-bottom: none;
-}
-
-.browser-alert-doc ul li h3 {
-    font-size: 18px;
-    line-height: 32px;
-}
-
-.browser-alert-doc ul li p {
-    font-size: 15px;
-    line-height: 48px;
-}
-
-.browser-alert-doc img {
-    width: 100%;
 }
