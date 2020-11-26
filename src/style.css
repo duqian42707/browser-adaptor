@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+ul li {
+    list-style: none;
+}
+
+a, a:link, a:hover, a:focus, a:active {
+    text-decoration: none;
+    background: none;
+    outline: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+b, i {
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+    border: none;
+    outline: none;
+}
+
+html {
+}
+
+body {
+    font-size: 16px;
+}
+
+.browser-alert {
+    width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.title-tip {
+    font-size: 16px;
+    text-align: left;
+    padding: 16px 24px;
+    line-height: 30px;
+    border: 1px solid #1990fc;
+    border-radius: 5px;
+    background: #e6f7ff;
+    color: #0086ff;
+    margin: 56px auto 0;
+}
+
+.title-tip a {
+    font-weight: bold;
+    color: #2196ff;
+}
+
+.title-tip a:hover, .title-tip a:focus, .title-tip a:active {
+    color: #0673d6;
+}
+
+.browser-alert-list {
+    margin: 40px auto;
+}
+
+.browser-alert-list ul {
+    overflow: hidden;
+}
+
+.browser-alert-list ul li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 82px;
+}
+
+.browser-alert-list ul li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    width: 86%;
+    margin: 6px auto;
+    padding: 15px 5%;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .1);
+}
+
+.browser-alert-list ul li:hover a {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .18);
+}
+
+.browser-alert-download img.browser-logo {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.browser-alert-download img.recommend {
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+
+.browser-alert-list ul li span {
+    float: left;
+    margin: 0 0 0 10px;
+    color: #444;
+    font-size: 14px;
+}
+
+.browser-alert-doc {
+    clear: both;
+}
+
+.browser-alert-doc h2 {
+    font-size: 23px;
+    margin: 0 0 16px;
+}
+
+.browser-alert-doc ul li {
+    list-style: none;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.browser-alert-doc ul li:last-child {
+    border-bottom: none;
+}
+
+.browser-alert-doc ul li h3 {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.browser-alert-doc ul li p {
+    font-size: 15px;
+    line-height: 48px;
+}
+
+.browser-alert-doc img {
+    width: 100%;
+}
