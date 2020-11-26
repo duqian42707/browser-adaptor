@@ -1,0 +1,10 @@
+{
+  "name": "browser-adaptor",
+  "version": "1.0.0",
+  "description": "Give a friendly prompt when users use lower version browsers.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "duqian",
+  "license": "MIT"
+}
