@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "esnext",
     "target": "es5",
-    "sourceMap": true
+    "sourceMap": true,
+    "resolveJsonModule": true
   },
   "include": [
     "./src/*.d.ts"

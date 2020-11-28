@@ -5,6 +5,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const packageInfo = require('./package.json');
 
 module.exports = {
+  mode: 'production',
   entry: './src/browser-adaptor.ts',
   output: {
     filename: 'browser-adaptor.min.js',
@@ -31,7 +32,11 @@ module.exports = {
           esModule: true,
         },
       },
-      {test: /\.ts$/, use: "ts-loader"},
+      {
+        test: /\.(ts|js)$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
       {test: /\.css$/, use: ['style-loader', 'css-loader']},
       {test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader']},
       {test: /\.svg$/, use: 'svg-url-loader'},
