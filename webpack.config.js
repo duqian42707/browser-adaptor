@@ -1,6 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const packageInfo = require('./package.json');
 
 module.exports = {
   entry: './src/browser-adaptor.ts',
@@ -11,9 +13,11 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
+  devtool: 'source-map',
   //插件
   plugins: [
     new CleanWebpackPlugin(),
+    new webpack.BannerPlugin(`browser-adaptor v${packageInfo.version} | (c) 2020 by duqian`),
     new HtmlWebpackPlugin({
       template: "./src/index.html"
     })
